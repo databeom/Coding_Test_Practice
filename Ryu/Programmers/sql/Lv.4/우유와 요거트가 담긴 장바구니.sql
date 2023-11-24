@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT Distinct A.CART_ID
+FROM CART_PRODUCTS A Left Join CART_PRODUCTS B on(A.CART_ID = B.CART_ID)
+WHERE A.NAME = 'Milk' AND B.NAME = 'Yogurt'
+ORDER BY CART_ID;
